@@ -85,3 +85,15 @@ body{background:radial-gradient(ellipse at 8% 18%,rgba(77,117,190,.09),transpare
 .project-links .button-lime:hover{background:#c0d0ff;box-shadow:0 7px 20px rgba(143,181,255,.24)}
 .gallery-card,.contact-card{background-color:var(--panel)}
 @media(max-width:640px){.project-visual{min-height:280px}}
+
+                                                                                                                                                                                                                                                                                                                                  
+/* Make the calculator preview read like a real product. */
+.project-browser{width:min(90%,520px)}
+.calc-buttons{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:7px;margin-top:17px}
+.calc-buttons i{display:grid;place-items:center;min-height:34px;padding:5px 3px;border-radius:7px;font:600 12px/1 var(--sans);font-style:normal}
+.calc-buttons .zero{grid-column:span 2}
+.project-card:nth-of-type(2) .project-browser{width:min(88%,500px)}
+.project-card:nth-of-type(2) .calc-buttons{display:flex;flex-wrap:wrap;gap:8px}
+.project-card:nth-of-type(2) .calc-buttons i{min-height:30px;padding:7px 10px;border-radius:999px;font:600 10px/1 var(--sans);font-style:normal}
+.project-card:nth-of-type(2) .calc-buttons .calc-op{margin-left:auto}
+@media(max-width:640px){.project-browser{width:88%}.calc-buttons{gap:5px}.calc-buttons i{min-height:30px}}
