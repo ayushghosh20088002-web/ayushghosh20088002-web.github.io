@@ -37,3 +37,51 @@ body{background:radial-gradient(ellipse at 12% 20%,rgba(64,115,96,.12),transpare
 .contact h2 span{color:var(--coral)}
 @media(max-width:900px){.gallery-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.gallery-card img{height:230px}}
 @media(max-width:640px){.project-details{min-height:0}.project-links{margin-top:20px;padding-top:0;gap:13px}.project-extra{margin-top:16px}.gallery-grid{grid-template-columns:1fr;gap:14px;margin-top:25px}.gallery-card img{height:250px}.gallery-card figcaption{padding:13px}.gallery-credit{font-size:9px}}
+
+
+/* Polished project presentation: cool blue, violet and warm coral accents. */
+:root{--bg:#111319;--panel:#191d26;--panel2:#202532;--line:#323847;--lime:#9daeff;--teal:#8ba6ff;--sky:#82d8f2;--coral:#ff9a83;--violet:#c2a3ff;--gold:#ffd28a}
+body{background:radial-gradient(ellipse at 12% 22%,rgba(89,118,220,.13),transparent 34%),radial-gradient(ellipse at 88% 52%,rgba(157,115,220,.12),transparent 36%),var(--bg)}
+.status-dot{background:var(--sky);box-shadow:0 0 14px rgba(130,216,242,.55)}
+.project-card{position:relative;overflow:hidden;border:1px solid rgba(157,174,255,.2);border-radius:18px;box-shadow:0 18px 55px rgba(0,0,0,.22);transition:transform .28s ease,border-color .28s ease,box-shadow .28s ease}
+.project-card:hover{transform:translateY(-5px);border-color:rgba(157,174,255,.52);box-shadow:0 25px 70px rgba(0,0,0,.34)}
+.project-visual{position:relative;isolation:isolate;min-height:370px;display:grid;place-items:center;overflow:hidden;background:radial-gradient(ellipse at 22% 20%,rgba(130,216,242,.32),transparent 38%),radial-gradient(ellipse at 82% 85%,rgba(194,163,255,.28),transparent 43%),linear-gradient(135deg,#192337,#252139 55%,#171d29)}
+.project-visual:before{content:"";position:absolute;inset:0;z-index:-1;background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:30px 30px;mask-image:linear-gradient(135deg,#000,transparent 78%)}
+.project-visual:after{content:"";position:absolute;z-index:-1;width:230px;height:230px;right:-58px;top:-76px;border:1px solid rgba(255,255,255,.18);border-radius:50%;box-shadow:0 0 0 28px rgba(255,255,255,.025),0 0 0 58px rgba(255,255,255,.02)}
+.project-browser{position:relative;width:min(78%,430px);border:1px solid rgba(255,255,255,.23);border-radius:14px;overflow:hidden;transform:perspective(1100px) rotateY(-5deg) rotateX(2deg) rotate(-1deg);box-shadow:0 28px 65px rgba(0,0,0,.48),0 0 0 6px rgba(255,255,255,.035);transition:transform .35s ease,box-shadow .35s ease}
+.project-card:hover .project-browser{transform:perspective(1100px) rotateY(0) rotateX(0) rotate(0);box-shadow:0 34px 75px rgba(0,0,0,.52),0 0 0 6px rgba(255,255,255,.05)}
+.browser-bar{background:rgba(13,16,23,.94);color:#e8ebf5;border-bottom:1px solid rgba(255,255,255,.1)}
+.calc-screen{background:linear-gradient(150deg,rgba(34,43,62,.98),rgba(22,26,38,.99));padding:25px 24px 23px}
+.calc-topline{color:#cbd4ec}.calc-mode{color:var(--sky)}
+.calc-expression{color:#abb4c8}.calc-result{color:#f5f6ff}.calc-result span{color:var(--coral)}
+.calc-buttons i{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.06);color:#f2f3f8}.calc-buttons .calc-op{background:rgba(130,216,242,.16);color:var(--sky)}.calc-buttons .calc-equals{background:linear-gradient(135deg,#8ba6ff,#b49aff);color:#121622}
+.project-card:nth-of-type(2) .project-visual{background:radial-gradient(ellipse at 22% 18%,rgba(255,154,131,.24),transparent 38%),radial-gradient(ellipse at 85% 84%,rgba(130,216,242,.24),transparent 43%),linear-gradient(135deg,#242235,#1b2633 60%,#1a1d28)}
+.project-card:nth-of-type(2) .calc-buttons i{font-size:10px;letter-spacing:.6px}
+.visual-caption{color:#e6eaff}.visual-caption span{color:var(--sky)}
+.project-details{background:linear-gradient(135deg,rgba(255,255,255,.018),transparent 55%)}
+.project-links .button-lime{background:linear-gradient(120deg,#aab8ff,#83dff0);color:#111622;box-shadow:0 7px 22px rgba(131,170,255,.2)}
+.project-links .button-lime:hover{box-shadow:0 10px 30px rgba(131,170,255,.34);transform:translateY(-2px)}
+.project-extra h4{color:var(--sky)}.gallery .section-heading-row h2 span{color:var(--sky)}
+.gallery-card:hover{border-color:rgba(130,216,242,.55)}
+.contact-card{background:radial-gradient(ellipse at 90% 5%,rgba(157,174,255,.15),transparent 40%),var(--panel)}
+@media(max-width:640px){.project-visual{min-height:280px}.project-browser{width:84%}.calc-screen{padding:20px 18px}}
+
+/* Final corporate polish: controlled contrast and product-first previews. */
+:root{--bg:#10141b;--panel:#171d27;--panel2:#1d2532;--text:#f2f5fb;--muted:#a2adbd;--line:#303a4a;--lime:#8fb5ff;--teal:#8fb5ff;--sky:#8bd9ed;--coral:#ffad91;--violet:#b6a5ff;--gold:#f2ca83}
+body{background:radial-gradient(ellipse at 8% 18%,rgba(77,117,190,.09),transparent 38%),radial-gradient(ellipse at 92% 60%,rgba(118,100,178,.07),transparent 40%),var(--bg)}
+.project-card{border:1px solid #30394a;border-radius:16px;background:#171d27;box-shadow:0 12px 35px rgba(0,0,0,.2)}
+.project-card:hover{transform:translateY(-3px);border-color:rgba(143,181,255,.42);box-shadow:0 18px 44px rgba(0,0,0,.29)}
+.project-visual{min-height:355px;background:radial-gradient(ellipse at 22% 18%,rgba(117,163,239,.2),transparent 42%),linear-gradient(135deg,#1b2638,#202235 65%,#171d28)}
+.project-visual:before{opacity:.45;background-size:38px 38px}
+.project-visual:after{opacity:.55;width:205px;height:205px}
+.project-browser{transform:perspective(1200px) rotateY(-3deg);box-shadow:0 22px 52px rgba(0,0,0,.4),0 0 0 5px rgba(255,255,255,.025)}
+.project-card:hover .project-browser{transform:perspective(1200px) rotateY(0);box-shadow:0 26px 58px rgba(0,0,0,.45),0 0 0 5px rgba(255,255,255,.035)}
+.calc-screen{background:linear-gradient(145deg,#202a3b,#171d29);padding:24px}
+.calc-buttons i{background:#252e3d;border-color:rgba(255,255,255,.055)}
+.calc-buttons .calc-op{background:rgba(139,217,237,.12);color:#9ce3f2}
+.calc-buttons .calc-equals{background:linear-gradient(135deg,#8fb5ff,#9fbcf0);color:#111927}
+.project-card:nth-of-type(2) .project-visual{background:radial-gradient(ellipse at 20% 20%,rgba(255,173,145,.17),transparent 42%),linear-gradient(135deg,#242337,#1b2735 66%,#171d28)}
+.project-links .button-lime{background:#a8c0ff;color:#111927;box-shadow:0 5px 16px rgba(143,181,255,.15)}
+.project-links .button-lime:hover{background:#c0d0ff;box-shadow:0 7px 20px rgba(143,181,255,.24)}
+.gallery-card,.contact-card{background-color:var(--panel)}
+@media(max-width:640px){.project-visual{min-height:280px}}
