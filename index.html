@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101514">
+  <meta name="description" content="Ayush Ghosh — beginner developer building thoughtful websites and useful tools.">
+  <title>Ayush Ghosh — Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Ayush Ghosh home"><span class="brand-mark">A<span>.</span></span><span class="brand-name">AYUSH GHOSH</span></a>
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#about">About</a><a href="#work">Projects</a><a href="#services">What I do</a>
+      <a class="nav-contact" href="#contact">Let’s talk <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section-wrap" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="status-dot"></span> OPEN TO LEARNING & COLLABORATING</div>
+        <h1>Curious mind.<br><span class="outline">Builder</span> in progress<span class="lime">.</span></h1>
+        <p class="hero-intro">Hi, I’m Ayush — a beginner developer from India learning to turn ideas into useful, good-looking things on the web.</p>
+        <div class="hero-actions"><a class="button button-lime" href="#work">Explore my work <span>↓</span></a><a class="text-link" href="#about">A little about me <span>↘</span></a></div>
+        <div class="hero-meta"><span>BASED IN INDIA</span><span class="meta-line"></span><span>LEARNING BY BUILDING</span></div>
+      </div>
+      <div class="hero-art" aria-label="Decorative illustration of a browser window and code">
+        <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
+        <div class="code-card"><div class="code-top"><div class="window-dots"><i></i><i></i><i></i></div><span>hello_world.py</span><span class="code-menu">···</span></div>
+          <div class="code-body"><div><span class="ln">01</span><span class="purple">class</span> <span class="lime-text">Developer</span><span>:</span></div><div><span class="ln">02</span>&nbsp;&nbsp;<span class="purple">def</span> <span class="blue">__init__</span>(self):</div><div><span class="ln">03</span>&nbsp;&nbsp;&nbsp;&nbsp;self.name = <span class="peach">"Ayush"</span></div><div><span class="ln">04</span>&nbsp;&nbsp;&nbsp;&nbsp;self.status = <span class="peach">"learning"</span></div><div><span class="ln">05</span>&nbsp;&nbsp;&nbsp;&nbsp;self.curiosity = <span class="lime-text">∞</span></div><div class="code-gap"></div><div><span class="ln">07</span><span class="comment"># always building something new</span></div><div><span class="ln">08</span><span class="lime-text">keep_going</span>()<span class="cursor"></span></div></div>
+        </div><div class="float-tag tag-html"><span class="tag-icon">&lt;/&gt;</span> HTML & CSS</div><div class="float-tag tag-python"><span class="python-icon">Py</span> PYTHON</div><div class="spark spark-one">✳</div><div class="spark spark-two">✳</div><div class="art-caption">SMALL STEPS.<br>REAL PROJECTS.</div>
+      </div>
+      <a class="scroll-cue" href="#about"><span class="scroll-line"></span> SCROLL TO EXPLORE</a>
+    </section>
+
+    <section class="about section-wrap section-block" id="about">
+      <div class="section-label"><span>01</span> / ABOUT</div>
+      <div class="about-content"><h2>Learning the craft,<br><span>one project at a time.</span></h2><div class="about-columns"><p>I’m a student and aspiring developer exploring how the web works. I enjoy taking an idea, figuring out how to build it, and making the result easy for someone else to use.</p><p>Right now, I’m learning HTML and CSS, building my Python foundations, and practicing by making small projects. I’m at the beginning of the journey — and excited to keep improving.</p></div>
+        <div class="skill-strip"><span class="strip-label">CURRENT TOOLKIT</span><span class="skill-pill"><b class="skill-dot lime-dot"></b> HTML <small>LEARNING</small></span><span class="skill-pill"><b class="skill-dot coral-dot"></b> CSS <small>LEARNING</small></span><span class="skill-pill"><b class="skill-dot blue-dot"></b> PYTHON <small>LEARNING</small></span><span class="skill-pill"><b class="skill-dot violet-dot"></b> JAVASCRIPT <small>EXPLORING</small></span></div>
+      </div>
+    </section>
+
+    <section class="work section-wrap section-block" id="work">
+      <div class="section-label"><span>02</span> / SELECTED WORK <span class="section-count">01 PROJECT</span></div>
+      <div class="section-heading-row"><h2>Made while<br><span>learning.</span></h2><p>A growing collection of experiments<br>and useful little things.</p></div>
+      <article class="project-card">
+        <div class="project-visual"><div class="project-browser"><div class="browser-bar"><div class="window-dots"><i></i><i></i><i></i></div><span>novacalc.app</span><span>↗</span></div><div class="calc-screen"><div class="calc-topline"><span>NOVA<span class="lime-text">CALC</span></span><span class="calc-mode">STANDARD</span></div><div class="calc-expression">128 × 4</div><div class="calc-result">512<span>.</span></div><div class="calc-buttons"><i>AC</i><i>±</i><i>%</i><i class="calc-op">÷</i><i>7</i><i>8</i><i>9</i><i class="calc-op">×</i><i>4</i><i>5</i><i>6</i><i class="calc-op">−</i><i>1</i><i>2</i><i>3</i><i class="calc-op">+</i><i class="zero">0</i><i>.</i><i class="calc-equals">=</i></div></div></div><div class="visual-caption">FIRST LIVE PROJECT <span>↗</span></div></div>
+        <div class="project-details"><div class="project-number">PROJECT / 001</div><h3>NovaCalc</h3><p>A clean, easy-to-use calculator built as my first step into creating and publishing things on the web.</p><div class="project-tags"><span>HTML</span><span>CSS</span><span>JAVASCRIPT</span></div><div class="project-links"><a class="button button-lime" href="https://ayushghosh20088002-web.github.io/novacalc/" target="_blank" rel="noreferrer">View live project <span>↗</span></a><a class="source-link" href="https://github.com/ayushghosh20088002-web/novacalc" target="_blank" rel="noreferrer">Source code <span>↗</span></a></div></div>
+      </article>
+      <p class="coming-soon"><span>✳</span> More projects are in the works. Check back soon.</p>
+    </section>
+
+    <section class="services section-wrap section-block" id="services">
+      <div class="section-label"><span>03</span> / WHAT I’M EXPLORING</div><div class="services-layout"><h2>Small ways<br>I can <span>help.</span></h2><div class="services-list">
+        <article class="service-item"><span class="service-num">01</span><div><h3>Simple websites</h3><p>Basic, responsive pages for a personal idea or small project, built while I grow my HTML and CSS skills.</p><span class="level-label">BEGINNER LEVEL · PRACTICE PROJECTS</span></div><span class="service-arrow">↗</span></article>
+        <article class="service-item"><span class="service-num">02</span><div><h3>Basic Python tools</h3><p>Small scripts and beginner-friendly tools that help automate simple, everyday tasks.</p><span class="level-label">BEGINNER LEVEL · PRACTICE PROJECTS</span></div><span class="service-arrow">↗</span></article>
+        <article class="service-item"><span class="service-num">03</span><div><h3>Creative experiments</h3><p>Exploring social media graphics and video editing as creative skills alongside coding.</p><span class="level-label">PERSONAL INTEREST · STILL LEARNING</span></div><span class="service-arrow">↗</span></article>
+      </div></div><p class="services-note">I’m still learning, so these are learning-stage skills rather than professional services. If you have a small idea, I’d love to hear about it.</p>
+    </section>
+
+    <section class="contact section-wrap section-block" id="contact"><div class="contact-card"><div class="contact-orbit"></div><div class="section-label"><span>04</span> / SAY HELLO</div><div class="contact-content"><div><h2>Have an idea?<br><span>Let’s connect.</span></h2><p>I’m always happy to talk about projects, learning, or creative ideas. Replace the placeholder email with your real address when you’re ready.</p><a class="button button-lime" href="mailto:YOUR-EMAIL@example.com?subject=Hello%20Ayush">Email me <span>↗</span></a></div><div class="contact-side"><span class="contact-kicker">FIND ME ONLINE</span><a href="https://github.com/ayushghosh20088002-web" target="_blank" rel="noreferrer">GitHub <span>↗</span></a><a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn <span>↗</span></a><small>Update these links with your profiles.</small></div></div></div></section>
+  </main>
+  <footer class="site-footer section-wrap"><a class="brand" href="#home"><span class="brand-mark">A<span>.</span></span><span class="brand-name">AYUSH GHOSH</span></a><span>BUILT WITH CURIOSITY <span class="lime">✳</span></span><a href="#home" class="back-top">BACK TO TOP ↑</a><span class="copyright">© <span id="year"></span> AYUSH GHOSH</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
